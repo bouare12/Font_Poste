@@ -1,0 +1,25 @@
+<uit-view>
+  
+  <uit-header [title]="appName" subtitle="Starter Kit Angular"></uit-header>
+  <uit-body>
+
+      <uit-sidebar #sidebar>
+          <uit-sidebar-header
+              logo="https://angular.io/assets/images/logos/angular/angular_whiteTransparent.png"
+              [title]="appName">
+          </uit-sidebar-header>
+
+          <uit-sidebar-item url="/" icon="home" title="Accueil">Accueil</uit-sidebar-item>
+      </uit-sidebar>
+
+      <uit-content>
+          <router-outlet></router-outlet>
+      </uit-content>
+
+      <uit-footer>
+          <p>Copyright © 2017 - LA POSTE - {{ appName }} - Tous droits réservés</p>
+      </uit-footer>
+
+  </uit-body>
+
+</uit-view>

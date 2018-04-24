@@ -1,0 +1,28 @@
+
+<!-- UitBannerComponent-->
+<uit-banner 
+  title="Page d'accueil"
+  icon="home"
+  [breadcrumb]="false"
+  [background]="true"
+>
+  Bienvenue sur la page d'accueil de l'application <strong>{{ appName }}</strong>.
+</uit-banner>
+<!-- App Welcome message -->
+<mat-card id="home" class="m-24">
+  <mat-card-header class="uit-primary-fg">
+    <div mat-card-avatar class="home-header-image"></div>
+    <mat-card-title>
+      {{ appName }}
+    </mat-card-title>
+    <mat-card-subtitle>
+      Bienvenue sur la page de votre nouvelle application. Cette application a été initialisée avec le starter kit du cadre de développement Angular SAM APPUI.
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <h5>
+      Ce composant est un exemple de structure de contenu de page.
+    </h5>
+    <button mat-raised-button color="accent">Go</button>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,18 @@
+@import '~@laposte/ui-theme/assets/scss/variables/theme';
+
+:host {
+    .mat-card-header {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .mat-card-content {
+        padding-top:24px;  
+    }
+    
+    .home-header-image {
+        background-image: url('https://angular.io/assets/images/logos/angular/angular_whiteTransparent.png');
+        background-size: cover;
+        background-color : mat-color($primary,400);
+    }
+    
+}
